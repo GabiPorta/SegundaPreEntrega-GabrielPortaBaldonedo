@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "section section section"
+    "section section section"
+    "footer footer footer footer"
+    ;
+} */
+
+header {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+main {
+    height: 25px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    color: lightskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px lightgray;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: lightskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    height: 600px;
+    margin: 5%;
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 140px 140px;
+    justify-items: center;
+}
+
+section div {
+    width: 250px;
+    height: 250px;
+    background-color: lightskyblue;
+}
+
+section div img {
+    width: 245px;
+    height: 245px;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    background-color: lightslategrey;
+    width: 100%;
+    bottom: 0;
+}
+
+h3 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Vista Movil */
+
+@media screen and (max-width: 576px) {
+    
+    header {
+        font-size: 10px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    section {
+        height: 320px;
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: 80px 80px;
+        grid-gap: 40px;
+    }
+    section div {
+        width: 80px;
+        height: 80px;
+    }
+    section div img {
+        width: 75px;
+        height: 75px;
+    }
+}
